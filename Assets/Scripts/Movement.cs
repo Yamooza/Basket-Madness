@@ -21,7 +21,7 @@ public class NewBehaviourScript : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             Debug.Log("hit ground jumps reset");
-            jumpsAmount = 3;
+            jumpsAmount = 2;
         }
     }
 
@@ -33,7 +33,7 @@ public class NewBehaviourScript : MonoBehaviour
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
 
         // Jump logic
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             if (jumpsAmount > 0)
             {
