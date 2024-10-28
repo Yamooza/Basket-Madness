@@ -450,6 +450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 190c14387b1f6f1468609e903048ffce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverUI: {fileID: 684728949}
 --- !u!4 &76636505
 Transform:
   m_ObjectHideFlags: 0
@@ -631,7 +632,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 210366107}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 76636504}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &210366107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1120,8 +1133,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -406, y: 294}
-  m_SizeDelta: {x: 432.133, y: 53.4307}
+  m_AnchoredPosition: {x: -154, y: 122}
+  m_SizeDelta: {x: 215.4085, y: 17.4971}
   m_Pivot: {x: 0.4197854, y: 0.9999997}
 --- !u!114 &515750385
 MonoBehaviour:
@@ -2410,7 +2423,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 753386311}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 76636504}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: restart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &753386311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3621,6 +3646,7 @@ MonoBehaviour:
   health: 100
   maxHealth: 0
   HealthBar: {fileID: 515750385}
+  gameManager: {fileID: 76636504}
 --- !u!1 &1042045000
 GameObject:
   m_ObjectHideFlags: 0
@@ -4656,7 +4682,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1235514699}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 76636504}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: MainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1235514699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5485,7 +5523,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1549260372}
   - component: {fileID: 1549260371}
-  - component: {fileID: 1549260370}
   - component: {fileID: 1549260374}
   - component: {fileID: 1549260373}
   m_Layer: 0
@@ -5495,18 +5532,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1549260370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1549260369}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 989b83a3462f8fb4c8a5371cd8d0a3fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1549260371
 SpriteRenderer:
   m_ObjectHideFlags: 0
