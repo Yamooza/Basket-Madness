@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Movement : MonoBehaviour
 {
     // Movement speed of the player
     public float MovementSpeed = 1;
@@ -10,6 +11,8 @@ public class NewBehaviourScript : MonoBehaviour
     public float jumpForce;
     public GameObject GameObject;
     public float jumpsAmount;
+
+    public CoinManager cm;
 
     void Start()
     {
@@ -57,6 +60,15 @@ public class NewBehaviourScript : MonoBehaviour
             Vector3 scale = transform.localScale;
             scale.x = 1;
             transform.localScale = scale;
+        }
+    }
+
+     void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Coin"))
+        {
+            Destroy(other.gameObject);
+            cm.coinCount++;
         }
     }
 }

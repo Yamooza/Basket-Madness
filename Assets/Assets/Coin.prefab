@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5477544731413216787}
   - component: {fileID: 9171320074664285584}
   - component: {fileID: 5620588456999938649}
-  - component: {fileID: 8051454727214690712}
+  - component: {fileID: 5567169001827305671}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Coin
@@ -107,7 +107,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!61 &8051454727214690712
+--- !u!61 &5567169001827305671
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,7 +136,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
