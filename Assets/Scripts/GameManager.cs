@@ -31,15 +31,20 @@ public class GameManager : MonoBehaviour
     {
         gameOverUI.SetActive(true);
     }
-
-    public void restart()
+    public void StartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("SampleScene3");
     }
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
     public void quit()
     {
         Application.Quit();
