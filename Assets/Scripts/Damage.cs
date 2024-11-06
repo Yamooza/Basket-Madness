@@ -22,6 +22,7 @@ public class Damage : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
              pHealth.health -= damage;
+
         }
     }
 }
