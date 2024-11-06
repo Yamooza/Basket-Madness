@@ -3,7 +3,9 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
-   public float health;
+    public AudioSource src;
+    public AudioClip sfx1, sfx2, sfx3, sfx4;
+    public float health;
    public float maxHealth;
     public Image HealthBar;
 
@@ -23,6 +25,8 @@ public class Health : MonoBehaviour
             isDead = true;
             gameManager.GameOver();
             Debug.Log("Dead");
+            src.clip = sfx4;
+            src.Play();
         }
     }
 }

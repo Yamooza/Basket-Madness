@@ -27,6 +27,10 @@ public class SoundEffectsPlayer : MonoBehaviour
         {
         src.clip = sfx2;
         src.Play();
+        }
+       
+
+
     }
-    }
+
 }
