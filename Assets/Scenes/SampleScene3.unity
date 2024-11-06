@@ -1206,11 +1206,7 @@ Transform:
   m_GameObject: {fileID: 107846299}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< HEAD
-  m_LocalPosition: {x: 35.3, y: -3.95, z: -1}
-=======
   m_LocalPosition: {x: 35.5, y: -3.95, z: -1}
->>>>>>> origin/velho
   m_LocalScale: {x: 2.2, y: 2.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12810,7 +12806,7 @@ Transform:
   m_GameObject: {fileID: 1632256395}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.174583, y: -1.5738053, z: 0}
+  m_LocalPosition: {x: -16.27, y: -1.5738053, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
