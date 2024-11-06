@@ -9,6 +9,9 @@ public class Shooting : MonoBehaviour
     public float projectileSpeed = 10f; // Speed of the projectile
     public float fireRate = 0.5f; // Time between shots
 
+        public AudioSource src;
+    public AudioClip sfx2;
+
     private float nextFireTime = 0f; // Time when the player can fire again
 
     void Update()
@@ -28,6 +31,9 @@ public class Shooting : MonoBehaviour
 
         // Get the Rigidbody2D component of the projectile
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
+
+        src.clip = sfx2;
+        src.Play();
 
         // Set the velocity of the projectile
         if (rb != null)

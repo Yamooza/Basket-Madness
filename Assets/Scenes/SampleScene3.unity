@@ -2575,7 +2575,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -225.4, y: -106.2}
+  m_AnchoredPosition: {x: -225.4, y: -124}
   m_SizeDelta: {x: 66.5868, y: 66.3025}
   m_Pivot: {x: 0.4197854, y: 0.9999997}
 --- !u!114 &232596137
@@ -9285,7 +9285,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1133629815}
   - component: {fileID: 1133629814}
-  - component: {fileID: 1133629816}
   - component: {fileID: 1133629809}
   - component: {fileID: 1133629813}
   - component: {fileID: 1133629812}
@@ -9312,7 +9311,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   src: {fileID: 50198076}
   sfx1: {fileID: 0}
-  sfx2: {fileID: 0}
+  sfx2: {fileID: 8300000, guid: f893d5a3bfb706842a8ab9f42b50f85f, type: 3}
   sfx3: {fileID: 0}
   sfx4: {fileID: 8300000, guid: b890486c3cb240e49ba8397009b2d83c, type: 3}
   health: 100
@@ -9419,6 +9418,8 @@ MonoBehaviour:
   jumpForce: 3
   GameObject: {fileID: 1133629808}
   jumpsAmount: 2
+  src: {fileID: 50198076}
+  sfx1: {fileID: 8300000, guid: ccda6c98c95e3184c8cdcb9e7b43ba0f, type: 3}
   cm: {fileID: 1751196206}
 --- !u!212 &1133629814
 SpriteRenderer:
@@ -9490,23 +9491,6 @@ Transform:
   - {fileID: 1894024849}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1133629816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1133629808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 642443e908efb2c43874cba83df1370b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  src: {fileID: 50198076}
-  sfx1: {fileID: 8300000, guid: 70fa6d8e54d52e0438694a722102dcbd, type: 3}
-  sfx2: {fileID: 8300000, guid: 2c45e4d81410abb408db5b6833173789, type: 3}
-  sfx3: {fileID: 8300000, guid: f292a07ba1f506c4b9dd43ad1b29cef8, type: 3}
-  sfx4: {fileID: 8300000, guid: b890486c3cb240e49ba8397009b2d83c, type: 3}
 --- !u!1 &1136092526
 GameObject:
   m_ObjectHideFlags: 0
@@ -13413,6 +13397,8 @@ MonoBehaviour:
   shootPoint: {fileID: 1698867589}
   projectileSpeed: 5
   fireRate: 0.5
+  src: {fileID: 50198076}
+  sfx2: {fileID: 8300000, guid: f893d5a3bfb706842a8ab9f42b50f85f, type: 3}
 --- !u!1 &1709942217
 GameObject:
   m_ObjectHideFlags: 0

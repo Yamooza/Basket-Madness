@@ -12,6 +12,9 @@ public class Movement : MonoBehaviour
     public GameObject GameObject;
     public float jumpsAmount;
 
+    public AudioSource src;
+    public AudioClip sfx1;
+
     public CoinManager cm;
 
     void Start()
@@ -43,6 +46,8 @@ public class Movement : MonoBehaviour
                 Debug.Log("jump");
                 _rigidbody.velocity = new Vector3(0, jumpForce, 0);
                 jumpsAmount -= 1;
+                src.clip = sfx1;
+                src.Play();
             }
         }
 
