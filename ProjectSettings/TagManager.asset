@@ -10,6 +10,8 @@ TagManager:
   - DeathCol
   - Coin
   - EE
+  - AnvilTrap
+  - Anvil
   layers:
   - Default
   - TransparentFX
