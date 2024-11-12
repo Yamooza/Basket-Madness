@@ -40,6 +40,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    public void Lastlevel()
+    {
+        SceneManager.LoadScene("Last Level");
+    }
+
     public void restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
