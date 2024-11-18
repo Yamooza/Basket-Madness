@@ -1,18 +1,53 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [Header("Visual Cue")]
+    [SerializeField] private GameObject visualCue;
+
+    [Header("Ink JSON")]
+    [SerializeField] private TextAsset inkJSON;
+
+    private bool playerInRange;
+
+    private void Awake()
     {
-        
+        playerInRange = false;
+        visualCue.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying)
+        {
+            visualCue.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+            }
+        }
+        else
+        {
+            visualCue.SetActive(false);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            playerInRange = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            playerInRange = false;
+        }
     }
 }

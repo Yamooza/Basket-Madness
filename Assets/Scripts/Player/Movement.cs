@@ -34,6 +34,11 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        if (DialogueManager.GetInstance().dialogueIsPlaying)
+        {
+            return;
+        }
+
         // Get horizontal movement input
         var movement = Input.GetAxis("Horizontal");
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
