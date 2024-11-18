@@ -3470,7 +3470,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1751196207}
+      - m_Target: {fileID: 1751196209}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: restart
         m_Mode: 1
@@ -3851,7 +3851,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1751196207}
+      - m_Target: {fileID: 1751196209}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: MainMenu
         m_Mode: 1
@@ -7975,7 +7975,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 938348219}
-  - component: {fileID: 938348220}
+  - component: {fileID: 938348221}
+  - component: {fileID: 938348222}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
@@ -7998,7 +7999,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 320579031}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &938348220
+--- !u!114 &938348221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938348218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d8d3471568c1354bb8b460d3e98b9a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visualCue: {fileID: 1993855393}
+  inkJSON: {fileID: 4900000, guid: 7796cb33b0554b34db5194095eb35bb6, type: 3}
+--- !u!61 &938348222
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8041,7 +8056,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.45, y: 1.12}
+  m_Size: {x: 2.34, y: 1.66}
   m_EdgeRadius: 0
 --- !u!1 &951528612
 GameObject:
@@ -9520,7 +9535,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1751196207}
+      - m_Target: {fileID: 1751196209}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: quit
         m_Mode: 1
@@ -9612,7 +9627,7 @@ MonoBehaviour:
   health: 100
   maxHealth: 0
   HealthBar: {fileID: 232596137}
-  gameManager: {fileID: 1751196207}
+  gameManager: {fileID: 1751196209}
 --- !u!114 &1133629810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14152,8 +14167,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1751196208}
-  - component: {fileID: 1751196207}
   - component: {fileID: 1751196206}
+  - component: {fileID: 1751196209}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -14175,19 +14190,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinCount: 0
   coinText: {fileID: 125173902}
---- !u!114 &1751196207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1751196205}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 190c14387b1f6f1468609e903048ffce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameOverUI: {fileID: 1672707041}
 --- !u!4 &1751196208
 Transform:
   m_ObjectHideFlags: 0
@@ -14203,6 +14205,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1751196209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751196205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae9b9187421ebb4e868f78da4a66561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverUI: {fileID: 1672707041}
 --- !u!1 &1796073293
 GameObject:
   m_ObjectHideFlags: 0
