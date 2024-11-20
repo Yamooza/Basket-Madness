@@ -3,10 +3,10 @@
 === main ===
 Can you help me with something?
     + [Yes]
-        -> chosen("Yes")
+        -> chosen("Ok lets get started")
     + [NO!]
-        -> chosen("NO!")
+        -> chosen("NO?! What do you mean NO?")
 
 === chosen(question) ===
-You chose {question}!
+ {question}!
 -> END
