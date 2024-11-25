@@ -54,4 +54,9 @@ public class GameManager : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void cutScene()
+    {
+        SceneManager.LoadScene("AlkuCutScene");
+    }
 }
