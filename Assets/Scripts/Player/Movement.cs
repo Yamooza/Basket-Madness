@@ -77,7 +77,7 @@ public class Movement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Coin"))
         {
-            Destroy(other.gameObject);
+            Destroy(other.gameObject, 0.35f);
             cm.coinCount++;
         }
     }
