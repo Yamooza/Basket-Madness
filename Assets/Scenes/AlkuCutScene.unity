@@ -294,7 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 420aa9126e97aeb4aad69f3eb36d558a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cutsceneDuration: 4.5
+  cutsceneDuration: 3.6
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
