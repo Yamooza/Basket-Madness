@@ -3,14 +3,32 @@
 === main ===
 Can you help me with something?
     + [Yes]
-        -> chosen("Ok lets get started!")
+        -> chosen_yes
     + [NO!]
-        -> chosen("NO?! What do you mean NO?")
-              === chosen(question) ===
- {question}!  
+        -> chosen_no
+
+=== chosen_yes ===
+Ok, let's get started!
 Did you see the cottage before?
     + [Yes]
-        -> chosen("Nice, so there is a flag on the roof can you please fetch me it.")
+        -> endDialogueYes
     + [NO!]
-        -> chosen("No? How can you even miss it?")
- -> END
+        -> endDialogueNo
+
+=== chosen_no ===
+NO?! What do you mean No?!
+Just help me with this please.
+Did you see the cottage before?
+    + [Yes]
+        -> endDialogueYes
+    + [NO!]
+        -> endDialogueNo
+
+=== endDialogueYes ===
+Nice, so there is a flag on the roof. Please fetch me it?
+-> END
+
+=== endDialogueNo ===
+No? How can you even miss it?
+Are you sure? Just go look for it!
+-> END
