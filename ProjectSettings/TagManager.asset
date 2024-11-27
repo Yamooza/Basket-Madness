@@ -12,6 +12,7 @@ TagManager:
   - EE
   - AnvilTrap
   - Anvil
+  - Door
   layers:
   - Default
   - TransparentFX

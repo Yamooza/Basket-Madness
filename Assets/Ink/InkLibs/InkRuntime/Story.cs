@@ -2823,8 +2823,8 @@ namespace Ink.Runtime
                 if (formatParams != null && formatParams.Count() > 0) {
                     message = string.Format (message, formatParams);
                 }
-                    
-                throw new System.Exception (message + " " + currentDebugMetadata);
+
+                throw new System.Exception(message + " " + currentDebugMetadata);
             }
         }
 

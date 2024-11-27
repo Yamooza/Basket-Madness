@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public GameObject gameOverUI;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,7 @@ public class GameManager : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
         }
     }
+
     public void GameOver()
     {
         gameOverUI.SetActive(true);
