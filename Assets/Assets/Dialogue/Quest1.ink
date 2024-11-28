@@ -25,10 +25,13 @@ Did you see the cottage before?
         -> endDialogueNo
 
 === endDialogueYes ===
-Nice, so there is a flag on the roof. Please fetch me it?
+There is an oldman in the shack. The oldman should have a spellbook of portals.
+But beware the oldman always gives puzzles.  
 -> END
 
 === endDialogueNo ===
 No? How can you even miss it?
 Are you sure? Just go look for it!
+Go in the cottage and ask the oldman for a spellbook of portals.
+But beware the oldman always gives puzzles.  
 -> END
