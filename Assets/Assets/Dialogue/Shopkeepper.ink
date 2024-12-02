@@ -2,7 +2,7 @@
 
 === main ===
 Hello there!
-I am the wise havegrand wizard, what brings you to my shop today?
+I am the wise grand wizard, what brings you to my shop today?
     + [Do you have the spellbook of portals]
         -> chosen_portal
     + [This witch said he can bring me home with the book]
