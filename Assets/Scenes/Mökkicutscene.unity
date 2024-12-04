@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cutsceneDuration: 4.5
-  sceneToLoad: SampleScene4
+  sceneToLoad: Test
 --- !u!4 &268167518
 Transform:
   m_ObjectHideFlags: 0
