@@ -9,14 +9,14 @@ I am the wise grand wizard, what brings you to my shop today?
         -> chosen_witch
 
 === chosen_portal ===
-Ofcourse but why would a duck need a portal spellbook
+Of course but why would a duck need a portal spellbook
     + [To get home.. This witch promised to help me.]
         -> chosen_witch
     + [TO UNLEASH MAYHEM ACROSS DIFFERENT REALITIES]
         -> Chosen_mayhem
 
 === chosen_witch ===
-Oh thats interesting indeed.
+Oh, thats interesting indeed.
 I can help you with this but it will cost 5 gold coins 
     + [(buy the book)]
         -> endDialogueYes
@@ -24,7 +24,7 @@ I can help you with this but it will cost 5 gold coins
         -> chosen_persuade
 
 === Chosen_mayhem ===
-I can't help you with that im sorry.
+I can't help you with that Im sorry.
     + [I was kidding, I need it to get back home]
         -> chosen_witch
     + [I was joking, this witch promised me to help me get back to my realm]
@@ -32,18 +32,18 @@ I can't help you with that im sorry.
 
 === chosen_persuade ===
 ...
-    + [Please, I don't have the gold and i need to get back home.]
+    + [Please, I don't have the gold and I need to get back home.]
         -> endDialogueplease
     + [JUST GIVE ME IT AND WE WON'T HAVE PROBLEMS!!!]
         -> endDialogue
 
 === endDialogueYes ===
-Plesure doing business with you 
+Pleasure doing business with you 
 -> END
 
 === endDialogue ===
 Problems? HAHAHA
-I could just smite you, if i wanted.
+I could just smite you, if I wanted.
 -> chosen_payup
 
 === endDialogueplease ===
@@ -53,6 +53,6 @@ Im sorry but I can't give it for free
 === chosen_payup ===
 ...
     + [Pay the 5 coins]
-        -> END
+        -> endDialogueYes
     + [Pay the 5 coins]
-        -> END
+        -> endDialogueYes
