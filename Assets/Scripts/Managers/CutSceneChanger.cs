@@ -7,6 +7,9 @@ public class CutsceneManager : MonoBehaviour
     // Duration of the cutscene in seconds
     public float cutsceneDuration = 3.6f;
 
+    // Name of the scene to load after the cutscene
+    public string sceneToLoad = "SampleScene3"; // Default value, can be changed in the Inspector
+
     void Start()
     {
         // Start the coroutine to change the scene after the cutscene duration
@@ -18,8 +21,7 @@ public class CutsceneManager : MonoBehaviour
         // Wait for the specified duration
         yield return new WaitForSeconds(cutsceneDuration);
 
-        // Load the main game scene
-        // Replace "MainGameScene" with the name of your main game scene
-        SceneManager.LoadScene("SampleScene3");
+        // Load the specified scene
+        SceneManager.LoadScene(sceneToLoad);
     }
 }

@@ -5203,7 +5203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c79f8112860b99342a1bc4e54244e0b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: SampleScene4
+  sceneToLoad: "M\xF6kkicutscene"
 --- !u!212 &606742482
 SpriteRenderer:
   m_ObjectHideFlags: 0
