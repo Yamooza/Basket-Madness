@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections; // Make sure to include this for IEnumerator
 
-public class Teleportrender : MonoBehaviour
+public class Teleportrender2 : MonoBehaviour
 {
     public float visibilityDuration = 2.0f; // Time in seconds to keep the portal visible
     private SpriteRenderer spriteRenderer;
@@ -19,14 +19,14 @@ public class Teleportrender : MonoBehaviour
     {
         while (true) // Loop indefinitely
         {
-            // Enable the SpriteRenderer
-            spriteRenderer.enabled = true;
+            // Disable the SpriteRenderer
+            spriteRenderer.enabled = false;
 
             // Wait for the specified duration
             yield return new WaitForSeconds(visibilityDuration);
 
-            // Disable the SpriteRenderer
-            spriteRenderer.enabled = false;
+            // Enable the SpriteRenderer
+            spriteRenderer.enabled = true;
 
             // Wait for the specified duration before enabling again
             yield return new WaitForSeconds(visibilityDuration);
