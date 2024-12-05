@@ -13,6 +13,7 @@ TagManager:
   - AnvilTrap
   - Anvil
   - Door
+  - GroundCheck
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Player
   - Water
   - UI
-  - 
+  - Ground
   - 
   - 
   - 

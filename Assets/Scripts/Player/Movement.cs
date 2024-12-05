@@ -11,6 +11,7 @@ public class Movement : MonoBehaviour
     public float jumpForce;
     public GameObject GameObject;
     public float jumpsAmount;
+    public GameObject Player;
 
     public AudioSource src;
     public AudioClip sfx1;
