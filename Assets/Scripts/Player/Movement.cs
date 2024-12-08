@@ -16,7 +16,6 @@ public class Movement : MonoBehaviour
     public AudioSource src;
     public AudioClip sfx1;
 
-    public CoinManager cm;
 
     void Start()
     {
@@ -71,15 +70,6 @@ public class Movement : MonoBehaviour
             Vector3 scale = transform.localScale;
             scale.x = 1;
             transform.localScale = scale;
-        }
-    }
-
-     void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Coin"))
-        {
-            Destroy(other.gameObject, 0.35f);
-            cm.coinCount++;
         }
     }
 }

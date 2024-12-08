@@ -1,9 +1,10 @@
 using UnityEngine;
 
-public class BulletDestoy : MonoBehaviour
+public class BulletDestroy : MonoBehaviour
 {
-    // Time in seconds before the bullet is destroyed
-    private float lifetime = 6f;
+    [Header("Settings")]
+    [SerializeField]
+    private float lifetime = 6f; // Time in seconds before the bullet is destroyed
 
     void Start()
     {
