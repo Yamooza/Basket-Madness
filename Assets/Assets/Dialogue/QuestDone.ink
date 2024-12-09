@@ -13,7 +13,7 @@ Give it to me.
 Now I can return you home.
 Are you ready.
     + [Yes, of course.]
-        -> END
+        -> ending_finally
     + [No, give me some time.]
         -> chosen_time
 
@@ -22,7 +22,7 @@ Are you ready.
 ...
 Are you ready to go home.
     + [Yes. (Give the book)]
-        -> END
+        -> ending_finally
     + [No.]
         -> chosen_no
 
@@ -36,18 +36,18 @@ What?! Don't you want to go back home?
 === ending_yes ===
 Ok so give it
     + [(Give the book)]
-        -> END
+        -> ending_finally
     + [(Give the book)]
-        -> END
+        -> ending_finally
 
 === ending_no ===
 Ok so have fun I won't help you.
-    + [I didn't want to get back home anyway]
-        -> END
+    + [Please (give the book)]
+        -> ending_finally
     + [(Give the book)]
         -> ending_finally
 
 === ending_finally ===
-Ok was that so hard.
-Lets get you home.
+Okay, for you to get home you will have to fight the timekeepper.
+Go forward and jump in to the portal.
         -> END

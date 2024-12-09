@@ -17,10 +17,14 @@ public class EnemyHealth : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private bool isDead = false;
 
+    // Reference to the Shopkeeper script
+    private Shopkeepper shopkeeper;
+
     void Start()
     {
         currentHealth = maxHealth;
         spriteRenderer = GetComponent<SpriteRenderer>();
+        shopkeeper = GetComponent<Shopkeepper>(); // Get the Shopkeeper component
 
         if (spriteRenderer && aliveSprite)
         {
@@ -60,8 +64,18 @@ public class EnemyHealth : MonoBehaviour
             spriteRenderer.sprite = deadSprite;
         }
 
+        // Disable the Shopkeeper script when the enemy dies
+        if (shopkeeper != null)
+        {
+            shopkeeper.enabled = false;
+        }
+
         // Optional: Disable enemy behavior or add additional death logic here
         Debug.Log("Enemy has died!");
+    }
+    public bool IsDead()
+    {
+        return isDead;
     }
 
     public void Heal(int amount)
