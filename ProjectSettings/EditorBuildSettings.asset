@@ -15,21 +15,18 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene3.unity
     guid: 979f48d0e47f4c545a154152f2cf5fe3
   - enabled: 1
-    path: Assets/Scenes/Test.unity
-    guid: ec8b5331cf158f94abd82e6661a73fd8
-  - enabled: 1
     path: "Assets/Scenes/M\xF6kkicutscene.unity"
     guid: 3b79275e3b4d02a4aaa1cee94d911a2c
+  - enabled: 1
+    path: Assets/Scenes/Test.unity
+    guid: ec8b5331cf158f94abd82e6661a73fd8
   - enabled: 1
     path: Assets/Scenes/SampleScene4.unity
     guid: e881d318671b9304fbedf941778bb756
   - enabled: 1
-    path: Assets/Scenes/SampleScene5.unity
-    guid: ffe811581f391ce45a7acc4b9ca9996d
-  - enabled: 1
     path: Assets/Scenes/SampleScene2.unity
     guid: a887cf39e0f1ca2499ce74b3aaab18fd
   - enabled: 1
-    path: Assets/Scenes/Last level.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Ending.unity
+    guid: b51a3aa40c9a14442b45f1412c941bfb
   m_configObjects: {}

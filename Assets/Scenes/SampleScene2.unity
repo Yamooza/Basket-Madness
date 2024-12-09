@@ -2699,6 +2699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teleporter: {fileID: 1830339788}
+  delayTime: 3
 --- !u!1 &990278619
 GameObject:
   m_ObjectHideFlags: 0
@@ -4262,7 +4263,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e2a251b9c1cb9ac488efb8bfc6fa3c6c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e9be88376c275c24eaf6bbcd8ceae9f1, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.66
   m_Pitch: 1
@@ -5239,7 +5240,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fbccfc2accd8a514ebbbc2d1437c00c2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.1499996
+      value: -7.5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fbccfc2accd8a514ebbbc2d1437c00c2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6416,7 +6417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c79f8112860b99342a1bc4e54244e0b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: MainMenu
+  sceneToLoad: Ending
 --- !u!212 &1830339790
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6516,7 +6517,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.006677069, y: 0.0025037527}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6527,7 +6528,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 0.116358444, y: 0.2081643}
   m_EdgeRadius: 0
 --- !u!1 &1857842380
 GameObject:

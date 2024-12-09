@@ -1,39 +1,27 @@
-using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine;
 
-public class DoorTeleport : MonoBehaviour
+public class Door : MonoBehaviour
 {
     // Specify the name of the scene you want to load
     public string sceneToLoad;
-
-    // Flag to check if player is in range
-    private bool playerInRange;
-
-    private void Update()
-    {
-        // Check if the player presses the interact key (E) and is in range
-        if (playerInRange && Input.GetKeyDown(KeyCode.E))
-        {
-            // Load the specified scene
-            SceneManager.LoadScene(sceneToLoad);
-        }
-    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Check if the object entering the trigger is the player
         if (other.CompareTag("Player"))
         {
-            playerInRange = true; // Set the flag to true
+            // Load the specified scene
+            SceneManager.LoadScene(sceneToLoad);
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        // Check if the object exiting the trigger is the player
+        // Optional: You can add logic here if you want to do something when the player exits the trigger
         if (other.CompareTag("Player"))
         {
-            playerInRange = false; // Set the flag to false
+            // You can leave this empty or add any exit logic if needed
         }
     }
 }

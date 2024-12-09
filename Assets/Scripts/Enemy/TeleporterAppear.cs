@@ -1,9 +1,11 @@
 using UnityEngine;
+using System.Collections;
 
-public class TeleporterAppear : MonoBehaviour
+public class TeleportAppear : MonoBehaviour
 {
     public GameObject teleporter; // Reference to the teleporter GameObject
     private EnemyHealth enemyHealth; // Reference to the EnemyHealth component
+    public float delayTime = 3f; // Delay time in seconds before activating the teleporter
 
     void Start()
     {
@@ -28,17 +30,21 @@ public class TeleporterAppear : MonoBehaviour
         // Check if the enemy is dead
         if (enemyHealth != null && enemyHealth.IsDead())
         {
-            ActivateTeleporter();
+            // Start the coroutine to activate the teleporter after a delay
+            StartCoroutine(ActivateTeleporterWithDelay());
         }
     }
 
-    private void ActivateTeleporter()
+    private IEnumerator ActivateTeleporterWithDelay()
     {
+        // Wait for the specified delay time
+        yield return new WaitForSeconds(delayTime);
+
         // Activate the teleporter
         if (teleporter != null)
         {
             teleporter.SetActive(true);
-            Debug.Log("Teleporter activated!");
+            Debug.Log("Teleporter activated after delay!");
         }
 
         // Optionally, disable this script after activation
